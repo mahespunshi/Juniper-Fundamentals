@@ -1,10 +1,15 @@
 a = 2
 b = 5
-c = b
-d = a
-a =c
-b = d
-print(a); print(b)
+# c = b
+# d = a
+# a =c
+# b = d
+# print(a); print(b)
+
+# above works fine, this is more concise 
+a, b = b, a
+print(a)
+print(b)
 
 # 2.
 c = 510
