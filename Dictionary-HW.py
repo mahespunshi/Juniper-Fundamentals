@@ -1,5 +1,7 @@
 # Create a dictionary called shopping_cart
-shopping_cart = {'Airpods': [10, 234], 'Mouse': [5, 5], 'Keyboard': [20, 8], 'Pen': [200, 1], 'Belt': [20, 6], 'Jeans': [20, 10]}
+# shopping_cart = {'Airpods': [10, 234], 'Mouse': [5, 5], 'Keyboard': [20, 8], 'Pen': [200, 1], 'Belt': [20, 6], 'Jeans': [20, 10]}
+shopping_cart = {'Airpods': (10, 234), 'Mouse': (5, 5), 'Keyboard': (20, 8), 'Pen': (200, 1), 'Belt': (20, 6), 'Jeans': (20, 10)}
+# in above line a list is used, you can use () Tuple, because we don't wan
 print(shopping_cart)
 # 1. Display all Keys
 print(shopping_cart.keys())
@@ -17,6 +19,9 @@ for key, value in shopping_cart.items():
 sale = {}
 for key, value in shopping_cart.items():
     if value[1] <= 10:
-        sale.update({key:value})
+        print(key,value)
+        sale.update({key:value[1]})
+        # key[item] = list[1]
 
 print(sale)
+
